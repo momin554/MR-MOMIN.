@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>MR-MOMIN TikTok Boost Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #00ffe1;
+      min-height: 100vh;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffcc;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffee;
+      margin-bottom: 20px;
+    }
+
+    p.tagline {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #eee;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff00cc33;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #111;
+      color: #00ffcc;
+      border: 1px solid #00ffcc88;
+      box-shadow: 0 0 8px #00ffee44;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      background: linear-gradient(to right, #ff00ff, #00ffee);
+      color: #000;
+      padding: 16px;
+      font-size: 18px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 20px #00ffee;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #ff00ff;
+    }
+
+    .msg {
+      margin-top: 25px;
+      font-size: 15px;
+      text-align: center;
+      background: #1e1e1e;
+      color: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      border-left: 5px solid #ff00cc;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .footer strong {
+      color: #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MR-MOMIN BOOST LAB ⚔️</h1>
+    <p class="tagline">“This isn't just a tool. This is street-tech domination.”</p>
+
+    <form id="boosterForm">
+      <input type="text" placeholder="আপনার TikTok ভিডিওর URL দিন..." required>
+      <select required>
+        <option value="">লাইক সংখ্যা বাছাই করুন</option>
+        <option>100 Likes</option>
+        <option>500 Likes</option>
+        <option>1000 Likes</option>
+      </select>
+      <select required>
+        <option value="">ভিউ সংখ্যা বাছাই করুন</option>
+        <option>500 Views</option>
+        <option>1000 Views</option>
+        <option>5000 Views</option>
+      </select>
+      <button type="submit">🚀 Boost Now</button>
+    </form>
+
+    <div id="responseMessage" class="msg" style="display: none;"></div>
+
+    <div class="footer">
+      Powered by <strong>MR-MOMIN</strong> — Hacker of the Neon Streets.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("boosterForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("responseMessage").style.display = "block";
+      document.getElementById("responseMessage").innerText = "✅ System Activated! Connecting to TikTok Engine... Please wait...";
+    });
+  </script>
+</body>
+</html>
